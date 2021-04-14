@@ -1,3 +1,3 @@
-<h1> Hello, Welcome to CICD !!   </h1>
-<h2> Deploying on a AWS server  </h2>
-<h2> Hi goodmorning all !!</h2>
+<h1> Hello, I have learnt K8S !!   </h1>
+<h2> It's fun to learn but difficult to remember  </h2>
+<h2> Happy learning keep practising !!</h2>
