@@ -3,32 +3,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo "I am compiling java code" 
+                echo " I am in build stage"
             }
         }
         stage('Test') { 
             steps {
-                echo "I am testing my code" 
-            }
-        }
-        stage('UAT Test') { 
-            steps {
-                echo "I am doing UAT testing of my code" 
+                echo " I am in Test stage"
             }
         }
         stage('Deploy') { 
             steps {
-                echo "I am deploying my code"  
-            }
-        }
-        stage('Dummy Stage') { 
-            steps {
-                echo "I am in Dummy stage my code"  
-            }
-        }
-        stage('Monitor') { 
-            steps {
-                echo "I am monitoring my code" 
+                echo " I am in Deploy stage"
             }
         }
     }
