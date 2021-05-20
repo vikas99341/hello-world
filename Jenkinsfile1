@@ -5,7 +5,10 @@ node {
     stage('Test') { 
         echo " I am in Test stage" 
     }
-    stage('Deploy') { 
+    stage('Deploy') {
         echo " I am in Deploy stage"  
+    }
+    stage('Archive') { 
+        echo " I am in Archive stage"  
     }
 }
