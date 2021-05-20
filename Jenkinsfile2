@@ -1,20 +1,20 @@
 node {
-    stage('SCM Checkout'){
+    stage('SCM-Checkout') {
 	    git branch: 'main', credentialsId: 'git-credentials', url: 'https://github.com/vikas99341/hello-world.git'
 	}
-    stage('Maven-Clean'){
-	    def mvnHome = tool name: 'maven_home', type: 'maven'
-	    def mnvCMD = "${mvnHome}/bin/mvn"
-	    sh "${mnvCMD} clean "
+    stage('Maven-clean') {
+        def mvnHome = tool name: 'maven_home', type: 'maven'
+        def mvnCMD = "${mvnHome}/bin/mvn"
+        sh "${mvnCMD} clean"
 	}
-    stage('Maven-Compile'){
-	    def mvnHome = tool name: 'maven_home', type: 'maven'
-	    def mnvCMD = "${mvnHome}/bin/mvn"
-	    sh "${mnvCMD} compile "
+    stage('Maven-compile') {
+        def mvnHome = tool name: 'maven_home', type: 'maven'
+        def mvnCMD = "${mvnHome}/bin/mvn"
+        sh "${mvnCMD} compile"
 	}
-    stage('Maven-Package'){
-	    def mvnHome = tool name: 'maven_home', type: 'maven'
-	    def mnvCMD = "${mvnHome}/bin/mvn"
-	    sh "${mnvCMD} package "
-	}	
+    stage('Maven-Package') {
+        def mvnHome = tool name: 'maven_home', type: 'maven'
+        def mvnCMD = "${mvnHome}/bin/mvn"
+        sh "${mvnCMD} package"
+	}
 }
