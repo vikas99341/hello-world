@@ -1,2 +1,2 @@
-<h1> Hello, I have learnt Docker and it's intresting and needs parctise  !!   </h1>
-<h2> Integrating Docker + maven + git and Jenkins together is my project assignment </h2>
+<h1> Hello, I have learnt Tomcat and Jenkins Integration !!   </h1>
+<h2> Learning Devops   </h2>
