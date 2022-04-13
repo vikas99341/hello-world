@@ -1,0 +1,25 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo "In Build stage"
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo "In Test stage" 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo "In Deploy stage" 
+            }
+        }
+        stage('Archive') { 
+            steps {
+                echo "In Archive stage" 
+            }
+        }
+    }
+}
