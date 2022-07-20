@@ -1,7 +1,4 @@
-# Pull base image 
-From tomcat:8-jre8 
-
-# Maintainer 
-MAINTAINER "kumar.vikas166798@gmail.com" 
-COPY /var/lib/jenkins/workspace/ansible-pipeline/webapp/target/webapp.war /usr/local/tomcat/webapps
+FROM tomcat:7
+# Take the war and copy to webapps of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/webapp.war
 
